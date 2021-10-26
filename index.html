@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <title>widget ui</title>
+</head>
+
+<div class="headercont">
+    <div class="widgettitle">PROTECT MY PURCHASE</div>
+
+
+    <body>
+        <div class="widgetcontent">Add $4.50 to protect your purchase against lost, stolen, or damaged packages.</div>
+        <div class="buttoncont">
+            <button class="protectbutton wobble-vertical"><b>Yes!</b> Protect my purchase</button>
+            <button class="declinebutton">No, I'll take my chances...</button>
+        </div>
+
+
+     <script>
+        $('.protectbutton').on('click', function(){
+            $(this).addClass('active_button');
+            $('.protectbutton').removeClass('decline_button');
+            $('.declinebutton').removeClass('decline_button');
+        });
+
+        $('.declinebutton').on('click', function(){
+            $('.protectbutton').removeClass('active_button');
+            $(this).addClass('decline_button');
+            $('.protectbutton').removeClass('active_button');
+            $('.declinebutton').removeClass('active_button');
+        });
+        
+        $(document).ready(function(){
+            $('#').addClass('stag_button');
+        });
+
+      
+        </script>
+
+
+
+        <div class="underwritercont">
+            <div class="underwritertext">
+
+                Offered by FanShield LLC d/b/a ShopGuarantee. Administered by Anova Marine Insurance LLC;
+                Underwritten by The Hartford Financial Services Group. By selecting “Protect your purchase”,
+                you confirm the information provided is true and complete and agree to Hartford’s Electronic
+                Record and Signature Agreement terms and conditions and privacy policy.
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="assets/img/SG_poweredbyProtecht.png" alt="ShopGuarantee powered by protecht" width="300px">
+        </div>
+</div>
+</div>
+</body>
+
+</html>
